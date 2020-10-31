@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  | Br-  | Br+  | Vol- | Vol+ | Mute |      |   _  |   +  |   [  |   ]  |  \   |
+ * |      | Br-  | Br+  | Vol- | Vol+ | Mute |      |   _  |   +  |   [  |   ]  |  \   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      | Rev  | FF   | Prev | Next | Play |      |ISO # |ISO / | PgUp | PgDn |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT_preonic_grid(
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC,
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL,
-  KC_DEL,  _______, _______, _______, _______, _______, _______, KC_UNDS, KC_PLUS, KC_LBRC, KC_RBRC, KC_BSLS,
+  _______, _______, _______, _______, _______, _______, _______, KC_UNDS, KC_PLUS, KC_LBRC, KC_RBRC, KC_BSLS,
   _______, _______, _______, _______, _______, _______, _______, KC_NUHS, KC_NUBS, KC_PGUP, KC_PGDN, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT
 ),
@@ -115,11 +115,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_preonic_grid(
-  _______, RESET,   DEBUG,   _______, _______, _______, _______, TERM_ON, TERM_OFF,_______, _______, _______,
-  _______, RGB_HUI, RGB_SAI, RGB_VAI, RGB_M_P, _______, _______, _______, _______, _______, _______, _______,
-  _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______,
-  _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+  _______, RESET,   DEBUG,   _______, _______, _______, _______, TERM_ON, TERM_OFF,_______, RGB_M_P,  RGB_MOD,
+  _______, RGB_HUI, RGB_SAI, RGB_VAI, RGB_TOG, _______, _______, _______, _______, _______, RGB_M_B,  RGB_M_R,
+  _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK, DVORAK,  RGB_M_SW, RGB_M_SN,
+  _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, RGB_M_K,  RGB_M_X,
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_M_G,  RGB_M_T
 )
 
 };
