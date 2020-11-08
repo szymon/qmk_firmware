@@ -23,6 +23,8 @@
    - MIDI notes can be sent when in Music mode is on
 */
 
+#define RGBLIGHT_SLEEP
+
 #define MIDI_BASIC
 
 /* enable advanced MIDI features:
